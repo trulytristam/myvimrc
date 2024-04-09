@@ -1,0 +1,72 @@
+{
+  "Function": {
+    "prefix": "fn",
+    "body": [
+      "fn $1($2) -> $3 {",
+      "\t$0",
+      "}"
+    ],
+    "description": "A Rust function"
+  },
+  "Struct": {
+    "prefix": "struct",
+    "body": [
+      "struct $1 {",
+      "\t$2: $3,",
+      "\t$0",
+      "}"
+    ],
+    "description": "A Rust struct"
+  },
+  "ScructInit": {
+    "prefix": "sinit",
+    "body": [
+      "$1 {",
+      "\t$2: $3,",
+      "\t$4: $5,",
+      "}"
+    ],
+    "description": "Initialize a struct with fields"
+  },
+  "Enum": {
+    "prefix": "enum",
+    "body": [
+      "enum $1 {",
+      "\t$2($3),",
+      "\t$0",
+      "}"
+    ],
+    "description": "A Rust enum"
+  },
+  "Impl": {
+    "prefix": "impl",
+    "body": [
+      "impl $1 {",
+      "\tfn $2(&self) -> $3 {",
+      "\t\t$0",
+      "\t}",
+      "}"
+    ],
+    "description": "An implementation block for a Rust struct or enum"
+  },
+  "Test": {
+    "prefix": "test",
+    "body": [
+      "#[test]",
+      "fn $1() {",
+      "\t$0",
+      "}"
+    ],
+    "description": "A Rust test function"
+  },
+  "Main": {
+    "prefix": "main",
+    "body": [
+      "fn main() {",
+      "\t$0",
+      "}"
+    ],
+    "description": "The main function in Rust"
+  }
+}
+
